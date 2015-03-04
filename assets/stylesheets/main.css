@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea, file, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border-color: transparent;
+  outline: 0;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #292929;
+}
+
+a:hover {
+  color: #C8C8C8;
+}
+
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #FFFFFF;
+  color: #292929;
+  font: 400 16px/1.5em "Lato", "Opens Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container,
+.grid {
+  padding: 0 50px 0 50px;
+  margin: 0 auto;
+  /*width: 1300px;*/
+}
+ 
+
+.col-1-3,
+.center-col{
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.col-left{
+  padding-right: 20px;
+}
+.col-right{
+  padding-left: 20px;
+}
+/*.center-col{
+  padding: 0px 20px 0px 20px;
+  
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #FFFFFF;
+  padding: 20px 0 0 0;
+  }
+
+.row-alt {
+  margin-top: -0.2em;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4, p {
+  margin-bottom: 1.3em;
+
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-weight: 900;
+  line-height: 1.3em;
+}
+
+h3 {
+  margin-bottom: 0.3em;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+p {
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+strong,
+.seo {
+  margin: 0em 0.2em 0.3em 0.2em;
+  margin-bottom: 0.3em;
+  margin-left: 0.2em;
+  font-size: 0.65em;
+  font-weight: 100;
+  line-height: 1em;
+  display: inline-block;
+}
+
+/*p, em,
+.seo {
+  margin: 0em 0.2em 0.3em 0.2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+
+}*/
+
+
+.wildcard{
+  color: #C8C8C8;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.6em;
+}
+
+.user-comments {
+
+  color: #292929;
+  font-size: 0.8em;
+  font-weight: 100;
+  line-height: 1.3em;
+  padding: 7px;
+}
+
+
+
+
+
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+
+header {    
+  position:relative;
+  right: 0;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #E0E0E0;
+  color: #292929;    
+  padding-bottom: 20px;
+  padding-top: 20px;
+  clear: both;
+}
+
+.logo {
+  display: inline-block;
+}
+  /*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.primary-nav {
+  display: inline-block;
+  position: relative;
+  left:0;
+}
+
+.primary-nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.primary-nav li:last-child {
+  margin-right: 0;
+}
+
+nav#top.primary-nav {
+display: inline-block;
+position: relative;
+float: right;
+top: -31px;
+right: 0;
+}
+nav#btt.primary-nav {
+display: inline-block;
+position: relative;
+float: right;
+top: 50px;
+left: 42px;
+font-size: 0.9em;
+}
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+
+
+.primary-footer {  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #E0E0E0;
+  color: #292929;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.6em;
+  font-size: 0.9em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  clear: both;
+}
+
+
+
+  /*
+  ========================================
+  Form
+  ========================================
+*/
+
+.map {
+  width: 100%;
+  height: 312p  x;
+  padding-top: 0.5em;
+
+}
+
+legend {
+  color:#292929;
+  margin-bottom: 0.5em;
+  font-weight: 900;
+  line-height: 1.3em;
+}
+
+label {
+  color: #C8C8C8;
+  font-weight: 100;
+  line-height: 1.6em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  line-height: 0.5em;
+}
+
+.form-elm-1-2 {
+  display: inline-block;
+  width: 47%;
+  height: 21px;
+  margin-bottom: 0.3em;
+
+
+}
+
+.form-elm-1-1 {
+  display: inline-block;
+  width: 100%;
+  height: 21px;
+  margin-bottom: 0.3em;
+}
+
+.txt-rgt {
+  margin-left: 6%;
+}
+
+.fld {
+  background: #C8C8C8;
+  padding: 0px;
+  line-height: 1em;
+  }
+
+.fld-rgt {
+  margin-left:5%;
+  background: #C8C8C8;
+  padding: 0px;
+  line-height: 1em;
+}
+
+.fld-lng {
+  background: #C8C8C8;
+  padding: 0px;
+  line-height: 1em;
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  background: #C8C8C8;
+  padding: 0px;
+  line-height: 1em;
+  text-align: top;
+  display: block;
+  width: 100%;
+  height: 89px;
+  margin-bottom: 0.3em;
+}
+
+.lbl-alg {
+  display: inline-block;
+  text-align: middle;
+}
+
+#deadline {
+  height: 21px;
+  width: 33%;
+  margin-right: 63px;
+  padding-left: 7px;
+  display: inline-block;
+}
+
+/*#sendfiles {
+  margin-left: 100px
+}*/
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn-default {
+  cursor: pointer;
+  background: #292929;
+  color: #FFFFFF;
+}
+
+.btn-default:hover {
+  background: #C8C8C8;
+  color: #292929;
+
+}
+
