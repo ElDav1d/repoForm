@@ -423,4 +423,7 @@ textarea {
   ========================================
 */
 
-#map { height: 180px; }
+#map { 
+  height: 180px;
+  margin-bottom: 7px; 
+}
