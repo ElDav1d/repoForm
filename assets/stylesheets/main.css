@@ -354,13 +354,13 @@ label {
 .fld-rgt {
   margin-left:5%;
   background: #C8C8C8;
-  padding: 0px;
+  padding: 7px;
   line-height: 1em;
 }
 
 .fld-lng {
   background: #C8C8C8;
-  padding: 0px;
+  padding: 7px;
   line-height: 1em;
   display: block;
   width: 100%;
